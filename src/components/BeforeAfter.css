@@ -1,0 +1,15 @@
+#before-after h2 {
+    text-align: left;
+  }
+  
+  #before-after img {
+    max-height: 375;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.3s ease;
+    image-rendering: auto;
+  }
+  
+  #before-after img:hover {
+    transform: scale(1.03);
+  }
