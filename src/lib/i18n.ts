@@ -24,7 +24,7 @@ export const dictionaries = {
       subtitle:
         "Family-owned installation, replacement, and repair serving Cicero, Chicago, and the western suburbs. Honest prices and work we stand behind.",
       ctaPrimary: "Get a Free Quote",
-      ctaSecondary: "Call (708) 555-0123",
+      ctaSecondary: "Call (708) 595-0374",
       trust1: "Licensed & insured",
       trust2: "Free estimates",
       trust3: "English & Español",
@@ -124,7 +124,7 @@ export const dictionaries = {
       nameLabel: "Your name",
       namePlaceholder: "e.g. Maria Gonzalez",
       phoneLabel: "Phone number",
-      phonePlaceholder: "(708) 555-0123",
+      phonePlaceholder: "(708) 595-0374",
       messageLabel: "What do you need?",
       messagePlaceholder: "e.g. I need a new two-car garage door installed…",
       submit: "Request my free quote",
@@ -163,7 +163,7 @@ export const dictionaries = {
       subtitle:
         "Instalación, reemplazo y reparación de un negocio familiar sirviendo a Cicero, Chicago y los suburbios del oeste. Precios honestos y trabajo garantizado.",
       ctaPrimary: "Cotización gratis",
-      ctaSecondary: "Llame al (708) 555-0123",
+      ctaSecondary: "Llame al (708) 595-0374",
       trust1: "Con licencia y seguro",
       trust2: "Presupuestos gratis",
       trust3: "English y Español",
@@ -284,5 +284,5 @@ export const dictionaries = {
 export type Dictionary = (typeof dictionaries)["en"];
 
 // Single place to update the business phone number.
-export const PHONE_DISPLAY = "(708) 555-0123";
-export const PHONE_TEL = "+17085550123";
+export const PHONE_DISPLAY = "(708) 595-0374";
+export const PHONE_TEL = "+17085950374";
