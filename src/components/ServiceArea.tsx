@@ -4,13 +4,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { ClockIcon, MapPinIcon, PhoneIcon } from "@/components/icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
 
-// Cicero, IL town center.
-const MAP_LAT = 41.8445;
-const MAP_LON = -87.7593;
-const MAP_BBOX = "-87.85,41.79,-87.66,41.90";
-const MAP_EMBED_URL = `https://www.openstreetmap.org/export/embed.html?bbox=${encodeURIComponent(
-  MAP_BBOX,
-)}&layer=mapnik&marker=${MAP_LAT}%2C${MAP_LON}`;
+// Google Maps embed for Cicero, IL
+const MAP_EMBED_URL =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47453.54886087956!2d-87.77394622089844!3d41.84454620000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e53e3f8a7d2df%3A0x4c3de3e8a5b5c5c5!2sCicero%2C%20IL!5e0!3m2!1sen!2sus!4v1234567890";
 
 export function ServiceArea() {
   const { t } = useLanguage();
