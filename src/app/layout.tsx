@@ -14,7 +14,7 @@ const barlow = Barlow({
 const barlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     "puertas de garaje",
     "instalación de puertas de garaje",
   ],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Lupe's Garage Doors | Garage Door Installation in Cicero & Chicago, IL",
     description:

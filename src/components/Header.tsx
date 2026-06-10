@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
 import {
   ClockIcon,
@@ -9,7 +8,6 @@ import {
   PhoneIcon,
 } from "@/components/icons";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n";
-import logo from "@/assets/heroLogo.png";
 
 export function Header() {
   const { t, toggle } = useLanguage();
@@ -52,14 +50,21 @@ export function Header() {
 
       {/* Main bar */}
       <div className="border-b border-border bg-white">
-        <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
-          <a href="#top" className="flex shrink-0 items-center">
-            <Image
-              src={logo}
-              alt="Lupe's Garage Doors"
-              className="h-10 w-auto sm:h-11"
-              priority
+        <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6">
+          <a href="#top" className="flex shrink-0 items-center gap-2 sm:gap-3">
+            <img
+              src="/logo.svg"
+              alt=""
+              className="h-9 w-auto sm:h-14"
             />
+            <span className="flex flex-col justify-center">
+              <span className="font-display text-xl font-extrabold uppercase leading-none text-red sm:text-[1.75rem]">
+                Lupe&rsquo;s
+              </span>
+              <span className="mt-0.5 font-display text-sm font-bold uppercase leading-none tracking-wide text-foreground sm:mt-1 sm:text-lg">
+                Garage Doors
+              </span>
+            </span>
           </a>
 
           <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
@@ -79,14 +84,14 @@ export function Header() {
               type="button"
               onClick={toggle}
               aria-label={t.nav.toggleLabel}
-              className="flex h-11 cursor-pointer items-center gap-1.5 border border-foreground px-3 font-display text-sm font-semibold uppercase tracking-wide transition-colors duration-150 hover:bg-foreground hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              className="flex h-11 shrink-0 cursor-pointer items-center gap-1.5 border border-foreground px-2.5 font-display text-sm font-semibold uppercase tracking-wide transition-colors duration-150 hover:bg-foreground hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:px-3"
             >
               <LanguagesIcon className="h-4 w-4" />
               {t.nav.toggleShort}
             </button>
             <a
               href={`tel:${PHONE_TEL}`}
-              className="flex h-11 items-center gap-2 bg-red px-4 font-display text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-150 hover:bg-red-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:px-5"
+              className="flex h-11 shrink-0 items-center gap-2 whitespace-nowrap bg-red px-3 font-display text-sm font-semibold uppercase tracking-wide text-white transition-colors duration-150 hover:bg-red-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:px-5"
             >
               <PhoneIcon className="h-4 w-4" />
               <span className="hidden md:inline">{PHONE_DISPLAY}</span>
