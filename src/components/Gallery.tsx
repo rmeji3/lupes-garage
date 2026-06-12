@@ -5,12 +5,19 @@ import {
   ThreeDImageCarousel,
   type CarouselSlide,
 } from "@/components/ui/three-d-image-carousel";
-import woodDoor from "@/assets/before.jpg";
-import panelDoor from "@/assets/after.jpg";
-import trackInstall from "@/assets/garage2.jpg";
+import garage1 from "@/assets/garage1.jpg";
+import garage2 from "@/assets/garage2.jpg";
+import garage3 from "@/assets/garage3.jpg";
+import garage4 from "@/assets/garage4.jpg";
+import garage5 from "@/assets/garage5.jpg";
+import garage6 from "@/assets/garage6.jpg";
+import garage7 from "@/assets/garage7.jpg";
+import garage8 from "@/assets/garage8.jpg";
+import garage9 from "@/assets/garage9.jpg";
+import garage10 from "@/assets/garage10.jpg";
 
 // 3 photos shown twice for now — swap in more job photos as they come.
-const photos = [woodDoor, panelDoor, trackInstall, woodDoor, panelDoor, trackInstall];
+const photos = [garage1, garage2, garage3, garage4, garage5, garage6, garage7, garage8, garage9, garage10];
 
 export function Gallery() {
   const { t } = useLanguage();
