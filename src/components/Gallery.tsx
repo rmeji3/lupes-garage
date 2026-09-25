@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
+import { ChevronRightIcon } from "@/components/icons";
 import {
   ThreeDImageCarousel,
   type CarouselSlide,
@@ -59,6 +61,14 @@ export function Gallery() {
           }}
           className="mt-10"
         />
+
+        <Link
+          href="/styles"
+          className="mt-10 inline-flex h-14 items-center justify-center gap-2 border-2 border-white px-8 font-display text-lg font-semibold uppercase tracking-wide text-white transition-colors duration-150 hover:bg-white hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+        >
+          {t.gallery.browseStyles}
+          <ChevronRightIcon className="h-5 w-5" />
+        </Link>
       </div>
     </section>
   );

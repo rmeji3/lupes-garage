@@ -16,6 +16,7 @@ export function Header() {
   const links = [
     { href: "/#services", label: t.nav.services },
     { href: "/#work", label: t.nav.work },
+    { href: "/styles", label: t.nav.styles },
     { href: "/#why-us", label: t.nav.whyUs },
     { href: "/#service-area", label: t.nav.serviceArea },
   ];
@@ -70,13 +71,13 @@ export function Header() {
 
           <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
             {links.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="font-display text-base font-semibold uppercase tracking-wide text-foreground transition-colors duration-150 hover:text-red"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

@@ -10,6 +10,7 @@ export const dictionaries = {
     nav: {
       services: "Services",
       work: "Our Work",
+      styles: "Door Styles",
       whyUs: "Why Us",
       serviceArea: "Service Area",
       contact: "Contact",
@@ -60,6 +61,7 @@ export const dictionaries = {
       next: "Next photo",
       fullscreen: "View full screen",
       close: "Close full screen view",
+      browseStyles: "Browse door styles",
       captions: [
         {
           title: "Wood-look insulated door",
@@ -145,6 +147,52 @@ export const dictionaries = {
       linkWork: "Recent work",
       linkQuote: "Get a free quote",
     },
+    doorStyles: {
+      eyebrow: "Door Styles",
+      freeQuote: "Free Quote",
+      compare: "Compare",
+      closeCompare: "Close compare",
+      fullscreen: "View full screen",
+      exitFullscreen: "Exit full screen",
+      swapHint: "Tap a style below to swap",
+      of: "of",
+      photo: "photo",
+      photos: "photos",
+      prev: "Previous photo",
+      next: "Next photo",
+      showPhoto: "Show photo",
+      railLabel: "Door styles",
+      collapseRail: "Collapse style list",
+      expandRail: "Expand style list",
+      slot: "Option",
+      items: [
+        {
+          name: "Carriage House",
+          desc: "Wood-look steel with arched or square top windows. The warm look of real wood without the sanding and staining.",
+          tags: ["Wood-look finishes", "Window inserts", "Insulated options"],
+        },
+        {
+          name: "Traditional Raised Panel",
+          desc: "The classic Chicago two-car door. Durable steel panels in white, almond, or brown that fit almost any home or alley garage.",
+          tags: ["Steel panels", "1- and 2-car sizes", "Most popular"],
+        },
+        {
+          name: "Windowed Steel",
+          desc: "Insulated steel with a row of top windows to bring daylight into your garage or workshop.",
+          tags: ["Natural light", "Insulated core", "Arched or square glass"],
+        },
+        {
+          name: "Flush & Commercial",
+          desc: "Clean, flat panels for modern homes, condos, and multi-unit buildings. Built for heavy daily use.",
+          tags: ["Modern look", "Multi-unit ready", "Vent options"],
+        },
+        {
+          name: "Openers & Tracks",
+          desc: "Quiet openers, new tracks, springs, and complete hardware setups — installed with your new door or on their own.",
+          tags: ["Smart phone control", "Battery backup", "Full hardware"],
+        },
+      ],
+    },
     footer: {
       tagline: "Family-owned garage door installation serving Cicero & Chicagoland.",
       hours: "Mon–Sat: 7am – 7pm",
@@ -160,6 +208,7 @@ export const dictionaries = {
     nav: {
       services: "Servicios",
       work: "Trabajos",
+      styles: "Estilos",
       whyUs: "Por qué nosotros",
       serviceArea: "Área de servicio",
       contact: "Contacto",
@@ -210,6 +259,7 @@ export const dictionaries = {
       next: "Foto siguiente",
       fullscreen: "Ver en pantalla completa",
       close: "Cerrar pantalla completa",
+      browseStyles: "Ver estilos de puerta",
       captions: [
         {
           title: "Puerta aislada estilo madera",
@@ -294,6 +344,52 @@ export const dictionaries = {
       linkServices: "Nuestros servicios",
       linkWork: "Trabajos recientes",
       linkQuote: "Cotización gratis",
+    },
+    doorStyles: {
+      eyebrow: "Estilos de puerta",
+      freeQuote: "Cotización gratis",
+      compare: "Comparar",
+      closeCompare: "Cerrar comparación",
+      fullscreen: "Ver en pantalla completa",
+      exitFullscreen: "Salir de pantalla completa",
+      swapHint: "Toque un estilo abajo para cambiar",
+      of: "de",
+      photo: "foto",
+      photos: "fotos",
+      prev: "Foto anterior",
+      next: "Foto siguiente",
+      showPhoto: "Ver foto",
+      railLabel: "Estilos de puerta",
+      collapseRail: "Contraer lista de estilos",
+      expandRail: "Expandir lista de estilos",
+      slot: "Opción",
+      items: [
+        {
+          name: "Estilo Cochera",
+          desc: "Acero con acabado tipo madera y ventanas arqueadas o cuadradas. El look cálido de la madera sin lijar ni barnizar.",
+          tags: ["Acabados tipo madera", "Ventanas decorativas", "Opción aislada"],
+        },
+        {
+          name: "Paneles Tradicionales",
+          desc: "La clásica puerta doble de Chicago. Paneles de acero en blanco, almendra o café para casi cualquier casa o garaje de callejón.",
+          tags: ["Paneles de acero", "Sencilla o doble", "La más popular"],
+        },
+        {
+          name: "Acero con Ventanas",
+          desc: "Acero aislado con una fila de ventanas arriba para llenar de luz su garaje o taller.",
+          tags: ["Luz natural", "Núcleo aislado", "Vidrio arqueado o cuadrado"],
+        },
+        {
+          name: "Lisa y Comercial",
+          desc: "Paneles lisos y limpios para casas modernas, condominios y edificios. Hechas para uso diario pesado.",
+          tags: ["Look moderno", "Para edificios", "Opción con ventilas"],
+        },
+        {
+          name: "Motores y Rieles",
+          desc: "Motores silenciosos, rieles nuevos, resortes e instalación completa de herrajes, con su puerta nueva o por separado.",
+          tags: ["Control por celular", "Batería de respaldo", "Herrajes completos"],
+        },
+      ],
     },
     footer: {
       tagline: "Instalación de puertas de garaje, negocio familiar sirviendo a Cicero y Chicago.",
