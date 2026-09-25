@@ -335,22 +335,23 @@ function StyleRail({
       <nav
         aria-label={copy.railLabel}
         className={cn(
-          "flex shrink-0 overflow-hidden bg-surface-dark transition-[width,height] duration-300 ease-out motion-reduce:transition-none",
+          "flex overflow-hidden bg-surface-dark transition-[width,height] duration-300 ease-out motion-reduce:transition-none",
           side
             ? cn(
-                "flex-col border-r border-border-dark",
+                "shrink-0 flex-col border-r border-border-dark",
                 collapsed ? "w-[158px]" : "w-[380px]"
               )
             : cn(
-                "flex-row border-t border-border-dark",
+                // Fill the width (not the content's width) so the list can scroll sideways
+                "min-w-0 flex-1 flex-row border-t border-border-dark",
                 collapsed ? "h-14" : "h-[120px]"
               )
         )}
       >
         <ul
           className={cn(
-            "flex min-h-0 min-w-0 flex-1",
-            side ? "flex-col" : "flex-row overflow-x-auto"
+            "flex min-h-0 min-w-0 flex-1 overscroll-contain [scrollbar-width:thin]",
+            side ? "flex-col overflow-y-auto" : "flex-row overflow-x-auto"
           )}
         >
           {copy.items.map((item, index) => {
@@ -371,7 +372,8 @@ function StyleRail({
                 key={DOOR_TYPES[index].key}
                 className={cn(
                   "flex min-h-0",
-                  side ? "flex-1" : "min-w-[180px] flex-1"
+                  // Rows share the height, but never shrink below a usable size: extra styles scroll
+                  side ? "min-h-[136px] flex-1" : "min-w-[180px] flex-1"
                 )}
               >
                 <button
