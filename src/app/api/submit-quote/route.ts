@@ -126,9 +126,12 @@ ${isSpanish ? "Teléfono:" : "Phone:"} ${phone}
 ${isSpanish ? "Mensaje:" : "Message:"} ${message || "(none)"}
     `.trim();
 
-    // Send email to your business email
+    // Send email to your business email.
+    // RESEND_FROM_EMAIL must be on a domain verified in Resend (e.g. quotes@yourdomain.com).
+    // Resend's shared onboarding@resend.dev fallback only delivers to the Resend
+    // account owner's own address, so it's for testing only.
     const result = await resend.emails.send({
-      from: "Lupe's Garage Doors <onboarding@resend.dev>",
+      from: `Lupe's Garage Doors <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
       to: process.env.BUSINESS_EMAIL || "contact@example.com",
       subject,
       text: emailBody,

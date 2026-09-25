@@ -18,7 +18,7 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lupesgaragedoors.com"), // Placeholder URL, replace with actual if known
+  metadataBase: new URL("https://lupesgaragedoors.com"),
   title: "Lupe's Garage Doors | Garage Door Installation in Cicero & Chicago, IL",
   description:
     "Family-owned garage door installation, replacement, and repair serving Cicero, Chicago, and nearby suburbs. Free estimates, honest prices, service in English y Español.",
