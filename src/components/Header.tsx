@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 import {
   ClockIcon,
@@ -13,10 +14,10 @@ export function Header() {
   const { t, toggle } = useLanguage();
 
   const links = [
-    { href: "#services", label: t.nav.services },
-    { href: "#work", label: t.nav.work },
-    { href: "#why-us", label: t.nav.whyUs },
-    { href: "#service-area", label: t.nav.serviceArea },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#work", label: t.nav.work },
+    { href: "/#why-us", label: t.nav.whyUs },
+    { href: "/#service-area", label: t.nav.serviceArea },
   ];
 
   const isDev = process.env.NODE_ENV === "development";
@@ -51,7 +52,7 @@ export function Header() {
       {/* Main bar */}
       <div className="border-b border-border bg-white">
         <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-3 px-4 sm:gap-4 sm:px-6">
-          <a href="#top" className="flex shrink-0 items-center gap-2 sm:gap-3">
+          <Link href="/#top" className="flex shrink-0 items-center gap-2 sm:gap-3">
             <img
               src="/logo.svg"
               alt=""
@@ -65,7 +66,7 @@ export function Header() {
                 Garage Doors
               </span>
             </span>
-          </a>
+          </Link>
 
           <nav aria-label="Main" className="hidden items-center gap-7 lg:flex">
             {links.map((link) => (
